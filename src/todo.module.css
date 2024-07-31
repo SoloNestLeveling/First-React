@@ -1,0 +1,102 @@
+.mainBg {
+    height: 100vh;
+    background-image: url("./Desktop\ -\ 54.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+
+.todoContainer {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+}
+
+.todoForm {
+    display: flex;
+    align-items: center;
+}
+
+.todoForm button {
+    margin-left: 10px;
+    background-color: rgba(96, 96, 96, 0.4);
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.todoForm input {
+    width: 260px;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: rgba(96, 96, 96, 0.3);
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+
+}
+
+.todoForm input:focus {
+    outline: none;
+    border: 1px solid white;
+    background-color: rgba(96, 96, 96, 0.7);
+}
+
+.todoBg {
+    display: flex;
+    width: 400px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    margin-top: 30px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.todoList {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 300px;
+    height: auto;
+    padding: 5px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.todoElement {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.todoElement span {
+    color: rgb(86, 86, 86);
+    font-weight: 500;
+    text-wrap: balance;
+}
+
+.todoElement button {
+    position: fixed;
+    margin-left: 260px;
+    background-color: rgb(150, 150, 150);
+    border: none;
+    width: 46px;
+    height: 20px;
+    border-radius: 5px;
+    color: rgb(177, 13, 13);
+    font-weight: 500;
+}

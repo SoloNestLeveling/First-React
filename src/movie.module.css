@@ -1,0 +1,161 @@
+body {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+header {
+    background-color: black;
+
+    margin: 0px;
+
+}
+
+
+
+
+.movieList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    height: auto;
+    perspective: 1000px;
+
+}
+
+
+.gridBg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    position: relative;
+    width: 250px;
+    height: 350px;
+
+}
+
+
+.cardContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+}
+
+.main:hover .cardContainer {
+    transform: rotateY(180deg);
+}
+
+.imageFront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.contentBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: rotateY(180deg);
+    overflow: hidden;
+
+}
+
+
+.contentBack h1 {
+    font-size: 18px;
+    text-wrap: balance;
+    text-align: center;
+
+}
+
+.contentBack h3 {
+    font-size: 14px;
+    text-wrap: balance;
+    margin-top: -5px;
+}
+
+.contentBack p {
+    font-size: 11px;
+    max-height: 200px;
+    text-wrap: balance;
+    text-align: center;
+    overflow: auto;
+
+}
+
+
+.headerBg {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.headerBg img {
+    width: 100%;
+    height: 500px;
+}
+
+.headerBg .imgFilter {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+
+.outside {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    margin-top: 100px;
+    margin-left: 200px;
+
+}
+
+.outside img {
+    width: 240px;
+    height: auto;
+}
+
+.outsideContent {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 50px;
+    width: 500px;
+}
+
+.outsideContent h2 {
+    font-size: 30px;
+}
+
+.outsideP1 {
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+.outsideP2 {
+    font-size: 18px;
+    text-wrap: balance;
+
+}
